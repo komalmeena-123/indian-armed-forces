@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para SF</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        /* ---------------------------------header----------------------------------- */
+        header {
+            text-align: center;
+            font-size: 40px;
+            color: maroon;
+            margin-top: -35px;
+        }
+
+        /* header h1 {
+            margin-bottom: -15px;
+        } */
+
+        #img1 {
+            position: absolute;
+            right: 214px;
+            top: 17px;
+            width: 75px;
+        }
+
+        #img2 {
+            position: absolute;
+            left: 120px;
+            top: 22px;
+            width: 162px;
+        }
+
+        /* -------nav-------------------------- */
+        nav {
+            /* background-color: rgb(209, 84, 84); */
+            border-radius: 10px;
+            margin-top: 30px;
+            overflow: auto;
+            margin-top: 2px;
+            /* width: 14%; */
+        }
+
+        nav a {
+            font-size: 20px;
+            float: left;
+            color: #f1b760;
+            text-decoration: none;
+            padding: 10px 16px;
+        }
+
+        nav a:hover {
+            color: rgb(226, 52, 61);
+            background-color: white;
+            font-weight: bolder;
+        }
+
+        /* ------------------------------intro------------------------------------- */
+        #intro {
+            color: #ffffff;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        /* --------------battalions--------------------------- */
+        #battalion {
+            color: #ffffff;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        .SF {
+            color: maroon;
+        }
+
+        #img3 {
+            
+            width: 200px;
+        }
+
+        #img4 {
+            
+            width: 200px;
+        }
+
+        #img5 {
+            
+            width: 255px;
+
+        }
+
+        #img6 ,#img7 ,#img8, #img10,#img9 { 
+            width: 200px;
+        }
+
+        /* -------------------operations------------------------ */
+        #operations {
+            color: #ffffff;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        #img11 {
+            position: absolute;
+            right: 120px;
+            top: 3084px;
+            width: 329px;
+        }
+        #para{
+            width: 100%;
+            height: 480px;
+        }
+
+        #operations figcaption{
+            position: absolute;
+            right: 220px;
+            /* bottom: 1px; */
+        }
+        #p1,#p2{
+            width: 40%;
+            height: 300px;
+            padding-right: 77px;
+            margin-left: 20px;
+        }
+        button#mutebtn{
+	background:url(button.jpg) no-repeat;
+	width: 30px;
+	height:30px;
+    border: 2px solid red;
+    border-radius: 30px;
+    margin-left: 70px;
+}
+    </style>
+    <script>
+        var audio,  mutebtn;
+        function initAudioPlayer(){
+            audio = new Audio();
+            audio.src = "Uri BGM.mp3";
+            audio.loop = true;
+            audio.play();
+          
+            mutebtn = document.getElementById("mutebtn");
+            
+            mutebtn.addEventListener("click", mute);
+            
+            function mute(){
+                if(audio.muted){
+                    audio.muted = false;
+                    mutebtn.style.background = "url(button.jpg) no-repeat";
+                } else {
+                    audio.muted = true;
+                    mutebtn.style.background = "url(button2.png) no-repeat";
+                }
+            }
+        }
+        window.addEventListener("load", initAudioPlayer);
+        </script>
+</head>
+
+<body>
+    <header>
+        <h1><u>Para Special Forces</u></h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Para_Commandos.jpg/195px-Para_Commandos.jpg"
+            alt="" id="img1">
+        <img src="https://qph.fs.quoracdn.net/main-qimg-9cd26d2d0383bddcffc5574d410ce063" alt="" id="img2">
+    </header>
+    <img src="https://media.images.yourquote.in/post/large/0/0/6/983/MJY34602.jpg" id="para">
+    <hr>
+    <div>
+        <nav>
+            <a href="01_home.html"><b>Home</b></a>
+            <a href="02_army_home.html"><b>Indian Army</b></a>
+             <button id="mutebtn"></button>
+        </nav>
+    </div>
+    <hr>
+    <!-- <img src="https://media.images.yourquote.in/post/large/0/0/6/983/MJY34602.jpg" alt="" width=1200px height=400px> -->
+    <div id="intro">
+        <p>
+            Para(Special Forces), also known as Para SF, is the special operations unit of the Indian Army. It is
+            attached to the Parachute Regiment. The unit specializes in various roles including hostage rescue,
+            counter-terrorism, unconventional warfare, special reconnaissance, foreign internal defense,
+            counter-proliferation, counter-insurgency, seek and destroy and personnel recovery.
+        </p>
+        <p>Also known as <b>"Red Devils"</b> </p>
+        <p>
+        <h4><u> Insignia</u></h4>
+        <ul style="color: maroon;">
+            <li>Maroon Beret</li>
+            <li>Balidan Badge</li>
+        </ul><br>
+        Formed on 1 July 1966.
+        </p>
+        <h4 style="display: inline-block;"><u> Motto:-&nbsp; </u></h4>
+        <h4 style="display: inline-block; color: maroon;"> Men Apart every men an emporor , Shatrujeet </h4><br>
+        <h4 style="display: inline-block;"><u> War Cry:-&nbsp; </u></h4>
+        <h4 style="display: inline-block; color: maroon;"> Balidan Param Dharam(Sacrifice Before Duty) </h4><br>
+        <h4><u>Roles:-</u></h4>
+        <ul>
+            <li>Special Operations</li>
+            <li>Counter Terrorists</li>
+            <li>Counter Insurgency</li>
+            <li>Hostage Rescue</li>
+            <li>Direct Action</li>
+        </ul>
+       
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/WZou-zelnpo" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen c id="vid1"></iframe> -->
+    </div>
+    <hr>
+    <img src="https://64.media.tumblr.com/eacb72af46e98cd3f6fd44abc1fc8572/tumblr_obk6w1VXLr1tjfjuco6_500.gifv" id="p1">
+<img src="https://i.pinimg.com/736x/52/0e/2f/520e2ff35bf2252128c855e960a34416.jpg" id="p2">
+    <div id="battalion">
+        <h1 style="color: mediumaquamarine;"><u>Battalions</u></h1>
+        <ul>
+            <li>There are total 9 battalions in the Para SF.</li>
+        </ul>
+        <h2 class="SF"><U>1 PARA SF</U></h2>
+        <ul>
+            <li>They are Urban warfare Specialists.</li>
+            <li>Established in 1978.</li>
+            <li>One of the most decorated battalion</li>
+        </ul>
+
+        <h2 class="SF"><u>2 PARA SF</u></h2>
+        <ul>
+            <li>Also known as 'PREDATORS'.</li>
+            <li>They are mountain warfare Specialists</li>
+            <li>Established in 2000.</li>
+            <img src="https://pbs.twimg.com/media/D7eP0NAVsAEDXY6.jpg" alt="" id="img3">
+        </ul>
+
+        <h2 class="SF"><u>3 PARA SF</u></h2>
+        <ul>
+            <li>Also known as ‘RUSSEL’S VIPERS’.</li>
+            <li>They are Desert Warfare specialists .</li>
+            <li>Established in 2002.</li>
+        </ul>
+        <img src="https://pbs.twimg.com/media/D8dhJROUEAYZEUU.jpg" alt="" id="img4">
+
+        <h2 class="SF"><u>4 PARA SF</u></h2>
+        <ul>
+            <li>Known as ‘DAGGERS’.</li>
+            <li>They are Mountain Warfare specialists .</li>
+            <li>Established in 2003.</li>
+            <li>One of the most decorated battalions.</li>
+            <li>Involved in surgical strikes.</li>
+        </ul>
+        <img src="https://qph.fs.quoracdn.net/main-qimg-48b5af3a0c339b68d10bc9349ef5cdca" alt="" id="img5">
+
+        <h2 class="SF">9 PARA SF</h2>
+        <ul>
+            <li>Known as ‘ GHOST OPERATORS’.</li>
+            <li>Highly secret organization.</li>
+            <li>They are the best in war business among all units in Indian army , in <br>
+                fact they are the best in the world . Trained for Mountain Warfare.</li>
+            <li>Established in 1966 (oldest battalion).</li>
+            <li>Involved in surgical strikes.</li>
+            <li>Most of there missions are still unknown</li>
+            <li>Major Sudhir Walia went in US and beat the commandos of 80 nations and topped the course.</li>
+        </ul>
+        <img src="https://i.pinimg.com/736x/8e/3e/44/8e3e44e07b1ca3316238a63ac61fc0c9.jpg" alt="" id="img6">
+
+        <h2 class="SF">10 PARA SF</h2>
+        <ul>
+            <li>Also known as ‘DESERT SCORPIONS’.</li>
+            <li>They are the sister unit of 9 Para SF.</li>
+            <li>Desert Warfare specialists.</li>
+            <li>As lethal as 9 Para.</li>
+        </ul>
+        <img src="https://cdn.sharechat.com/indianarmy_fe153dd_1591954624197_cmprsd_40.jpg" alt="" id="img7">
+
+        <h2 class="SF">11 PARA SF</h2>
+        <ul>
+            <li>Jungle Warfare specialist.</li>
+        </ul>
+        <img src="https://scontent.fixc7-1.fna.fbcdn.net/v/t31.18172-8/s960x960/21762710_1018054578336226_5608699314302149290_o.jpg?_nc_cat=105&ccb=1-3&_nc_sid=730e14&_nc_ohc=XVgTiYUsgmcAX_cqT2r&_nc_ht=scontent.fixc7-1.fna&tp=7&oh=511a2fafe150ae2405a8c4a349825938&oe=60CFC37E"
+            alt="" id="img8">
+
+        <h2 class="SF">12 PARA SF</h2>
+        <ul>
+            <li>Known as ‘DIRTY DOZEN’.</li>
+            <li>Jungle Warfare specialists.</li>
+        </ul>
+        <img src="https://www.teahub.io/photos/full/314-3142500_12-para-sf-logo.jpg" alt="" id="img9">
+
+        <h2 class="SF">21 PARA SF</h2>
+        <ul>
+            <li>Known as ‘ WAGHNAKAS’.</li>
+            <li>Jungle Warfare specialists.</li>
+            <li>Mainly active on eastern jungles.</li>
+            <li>Were involved in Myanmar strikes.</li>
+        </ul>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQurClgREEgQcavA8tu3bBImUI0gKI8YEFTief2gH_nYM16oE8zxB-dg_5HY5rcKsYZjg0&usqp=CAU" alt="" id="img10">
+        <hr>
+    </div>
+
+    <div id="operations">
+        <h1 style="color: rgb(85, 13, 8);"><u>Operations</u></h1>
+        <p style="color: cyan;">• Most of the operations of special forces are highly secretive and are never made
+            public. <br>
+            • But some of the operations are made public and I would be telling some important operations
+            among those.
+        </p>
+        <ul style="list-style-type:circle;">
+            <li>Operation Mandhol 1971.</li>
+            <li>Charcho raid 1971.</li>
+            <li>Operation Blue Star 1984.</li>
+            <li>Sri Lanka(Operation Pawan) 1987.</li>
+            <li>Operation Cactus 1988 , Maldives.</li>
+            <li>Kargil War 1999.</li>
+            <li>Operation Khukri 2000 , Sierra Leone.</li>
+            <li>Operation Apache 2001(company level operation of 9 PARA).</li>
+            <li>Operation Summer Storm 2009.</li>
+            <li>Counter terrorist operation in Samba.</li>
+            <li>Ongoing counter- terrorist and counter-insurgency operations in J&K(Operation Rakshak).</li>
+            <li>Myanmar strikes 2015(21 PARA).</li>
+            <!-- <img src="https://elitepredators.files.wordpress.com/2019/07/cymera_20190707_122234.jpg" alt="" id="img11">
+            <figcaption>#ten heads for an eye</figcaption> -->
+            <li>Surgical strikes in POK 2016(4&9 PARA).</li>
+            
+        </ul>
+        
+    </div>
+    <hr>
+
+</body>
+
+</html>

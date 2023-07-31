@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        /* ---------------------------------header----------------------------------- */
+        header {
+            text-align: center;
+            font-size: 40px;
+            color: maroon;
+            margin-top: -35px;
+        }
+
+        #img1 {
+            position: absolute;
+            right: 80px;
+            top: 19px;
+            width: 201px;
+        }
+
+        #img2 {
+            position: absolute;
+            left: 125px;
+            top: 22px;
+            width: 117px;
+        }
+
+        /* ----------------------------------navigation-------------------------------- */
+        nav {
+            /* background-color: rgb(209, 84, 84); */
+            border-radius: 10px;
+            margin-top: 30px;
+            overflow: auto;
+            margin-top: 2px;
+            /* width: 14%; */
+        }
+
+        nav a {
+            font-size: 20px;
+            float: left;
+            color: #f1b760;
+            text-decoration: none;
+            padding: 10px 16px;
+        }
+
+        nav a:hover {
+            color: rgb(226, 52, 61);
+            background-color: white;
+            font-weight: bolder;
+        }
+
+        /* -----------------------intro--------------------------- */
+        #intro {
+            color: #ffffff;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        #img3 {
+
+            height: 260px;
+        }
+
+        /* -----------------operations----------------- */
+        #operations {
+            color: #fdfdfd;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        /* -----------awards---------------------- */
+        #awards {
+            color: #fdfdfd;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        #img4 {
+
+            width: 200px;
+        }
+
+        #img5 {
+            width: 200px;
+        }
+
+        button#mutebtn {
+            background: url(button.jpg) no-repeat;
+            width: 30px;
+            height: 30px;
+            border: 2px solid red;
+            border-radius: 30px;
+            margin-left: 70px;
+        }
+    </style>
+    <script>
+        var audio, mutebtn;
+        function initAudioPlayer() {
+            audio = new Audio();
+            audio.src = "Teri Mitti Instrumental.mp3";
+            audio.loop = true;
+            audio.play();
+
+            mutebtn = document.getElementById("mutebtn");
+
+            mutebtn.addEventListener("click", mute);
+
+            function mute() {
+                if (audio.muted) {
+                    audio.muted = false;
+                    mutebtn.style.background = "url(button.jpg) no-repeat";
+                } else {
+                    audio.muted = true;
+                    mutebtn.style.background = "url(button2.png) no-repeat";
+                }
+            }
+        }
+        window.addEventListener("load", initAudioPlayer);
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><u>Marine Commandos</u></h1>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Marine_Commandos_Insignia.png/180px-Marine_Commandos_Insignia.png"
+            alt="" id="img1">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/79/Marine_Commandos_%28MARCOS%29_logo.jpg" alt=""
+            id="img2">
+    </header>
+    <img src="https://www.ssbcrack.com/wp-content/uploads/2016/08/marcos.jpg" alt="" width="100%" height=600px>
+    <hr>
+    <div>
+        <nav>
+            <a href="01_home.html"><b>Home</b></a>
+            <a href="04_navy.html"><b>Indian Navy</b></a>
+            <button id="mutebtn"></button>
+        </nav>
+    </div>
+    <hr>
+
+    <div id="intro">
+        <p>
+            The Marine Commandos, abbreviated to MARCOS and officially called the Marine Commando Force (MCF), are the
+            special forces unit of the Indian Navy and is responsible for conducting special operations. <br>
+        </p>
+        <p>
+            The MARCOS were founded in February 1987. MARCOS are capable of operating in all types of environments; at
+            sea, in air and on land.[1][7] The force has gradually acquired more experience and an international
+            reputation for professionalism.[1][8] The MARCOS regularly undertake specialised maritime operations in
+            Jammu and Kashmir through the Jhelum River and Wular Lake, a 65 square kilometres (16,000 acres) freshwater
+            lake, and conduct counter-insurgency operations in the region.
+        </p>
+        <p>Also known as <b>"DAHDI WALA FAUJ"</b> </p>
+        <img src="https://i.pinimg.com/originals/68/90/42/689042439a8111b7570e32c7e5a8d9a5.jpg" width="45%"
+            height="200px">
+        <img src="https://indianpolitics.co.in/wp-content/uploads/2020/11/42A788BE00000578-0-image-m-3_1500934353082.jpg"
+            width="45%" height="200px" style="margin-left: 9%;">
+        <p>
+        <h4><u> Insignia</u></h4>
+        <ul style="color: maroon;">
+            <li>Maroon Beret</li>
+            <li>Marcos Combat Badge</li>
+        </ul><br>
+        Formed on 1 July 1966.
+        </p>
+        <h4 style="display: inline-block;"><u> Motto:-&nbsp; </u></h4>
+        <h4 style="display: inline-block; color: maroon;"><b> The Few , The Fearless </b></h4><br>
+        <img src="https://i.pinimg.com/originals/d1/32/16/d13216c48e996b7101e0f9e2c5cb83a1.jpg" alt="" id="img3">
+        <p>
+            • There are only 2-3 thousand Marcos (this depicts the toughness of selection procedure). <br>
+            • It’s training is considered as most difficult in the world and that’s why they are capable fighting
+            from air , water and land .
+        </p>
+        <p>
+            <b><i> Training of MARCOS is harder than any other Special Forces. This is well-proven by the fact that a
+                    MARCOS cadet went to the US Navy SEALS training and topped the course which has an attrition rate of
+                    90% !</i></b>
+        </p><br>
+        <p>
+            MARCOS are known to be very secretive, not revealing their actual identity as specialised, elite soldiers.
+            They are distributed amongst the naval bases of Mumbai, Kochi and Vizag. <br>
+
+            Who knows? Maybe the person living in your neighbourhood or the one in your family itself is a MARCO? 😉
+        </p>
+        <h4><u>Roles:-</u></h4>
+        <ul>
+            <li>Amphibious Operations .</li>
+            <li>Counter Terrorists</li>
+            <li>Counter Insurgency</li>
+            <li>Hostage Rescue</li>
+            <li>Direct Action</li>
+            <li>Anti – Piracy .</li>
+        </ul>
+    </div>
+    <hr>
+    <div id="operations">
+        <h1 style="color: rgb(57, 204, 214);"><u>Operations</u></h1>
+        <ul>
+            <li> Operation Cactus.</li>
+            <li>Operation Leech.</li>
+            <li>Operation Pawan.</li>
+            <li>Kargil War.</li>
+            <li>Operation Black Tornado(attack of 26/11).</li>
+            <li>Operation Cyclone.</li>
+            <li>Counter terrorist Operations in J&K . They are posted in the Wular lake area as it is was an easy route
+                for terrorists but no more.</li>
+            <li>They have successfully executed innumerous anti-piracy operations</li>
+            <li>As per reports Marcos have been deployed in Pangong Tso lake region on Indo-China border . </li>
+        </ul>
+    </div>
+    <hr>
+    <div id="awards">
+        <h1 style="color: cyan;"><u>Gallantry Awards</u></h1>
+        <p><b><u>Shaurya Chakra</u></b>– Captain Varun Singh- he was heavily injured during an encounter in <br> J&K as
+            a bullet fired by a terrorist hit a grenade on his waist and exploded there . Even the <br> doctors
+            said he couldn’t survive but he survived against all odds.</p>
+        <p><b><u>Shaurya Chakra</u></b>– Vijay Rawat – he was the buddy of Captain Varun in that operation.</p>
+        <p><b><u>Shaurya Chakra</u></b>– Praveen Teotia – This commando was the hero of 26/11 . He was also told <br>
+            by the doctors that he could never even walk again but today he runs marathons and iron
+            man <br> races. It took him 2.5 years to get off bed and start walking</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqcyXlzAZAdSmJ938-GwpKKKWZKVpo59Nm3g&usqp=CAU"
+            alt="" id="img4">
+        <img src="https://iansphoto.in/web/photoimages_new/400/2020/11/24/e4a8898c1e9d4c0ce46f396c0cac8d6b.jpg" alt=""
+            id="img5">
+    </div>
+    <hr>
+</body>
+
+</html>

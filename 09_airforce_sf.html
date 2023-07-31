@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garuds</title>
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        /* ---------------------------------header----------------------------------- */
+        header {
+            text-align: center;
+            font-size: 40px;
+            color: maroon;
+            margin-top: -35px;
+        }
+
+        #img1 {
+            position: absolute;
+            right: 120px;
+            top: 19px;
+            width: 160px;
+        }
+
+        #img2 {
+            position: absolute;
+            left: 160px;
+            top: 22px;
+            width: 75px;
+        }
+
+        /* ----------------------------------navigation-------------------------------- */
+        nav {
+            /* background-color: rgb(209, 84, 84); */
+            border-radius: 10px;
+            margin-top: 30px;
+            overflow: auto;
+            margin-top: 2px;
+            /* width: 14%; */
+        }
+
+        nav a {
+            font-size: 20px;
+            float: left;
+            color: #a8701b;
+            text-decoration: none;
+            padding: 10px 16px;
+        }
+
+        nav a:hover {
+            color: rgb(226, 52, 61);
+            background-color: white;
+            font-weight: bolder;
+        }
+
+        /* -----------------------intro--------------------------- */
+        #intro {
+            color: #000000;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        #img5 {
+            border: solid 4px blue;
+            position: absolute;
+            right: 92px;
+            top: 1118px;
+            width: 425px;
+        }
+
+        /* ---------------------operations------------------------ */
+        #operations {
+            color: #000000;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        #img4 {
+            border: solid 2px rgb(192, 176, 32);
+            position: absolute;
+            right: 209px;
+            top: 1888px;
+            width: 296px
+        }
+
+        /* ------------------awards--------------------------------- */
+        #awards {
+            color: #000000;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        #img3 {
+            position: absolute;
+            right: 61px;
+            top: 2230px;
+            width: 402px;
+            height: 242px;
+        }
+        button#mutebtn{
+	background:url(button.jpg) no-repeat;
+	width: 30px;
+	height:30px;
+    border: 2px solid red;
+    border-radius: 30px;
+    margin-left: 70px;
+}
+    </style>
+    <script>
+        var audio,  mutebtn;
+        function initAudioPlayer(){
+            audio = new Audio();
+            audio.src = "Jai Ho Guitar.mp3";
+            audio.loop = true;
+            audio.play();
+          
+            mutebtn = document.getElementById("mutebtn");
+            
+            mutebtn.addEventListener("click", mute);
+            
+            function mute(){
+                if(audio.muted){
+                    audio.muted = false;
+                    mutebtn.style.background = "url(button.jpg) no-repeat";
+                } else {
+                    audio.muted = true;
+                    mutebtn.style.background = "url(button2.png) no-repeat";
+                }
+            }
+        }
+        window.addEventListener("load", initAudioPlayer);
+        </script>
+</head>
+
+<body>
+    <header>
+        <h1><u>Garud Commandos</u></h1>
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/IAF-Garud_SF.png/330px-IAF-Garud_SF.png" alt=""
+            id="img1">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/Garud_Commando_Force_Logo.jpg/120px-Garud_Commando_Force_Logo.jpg"
+            alt="" id="img2">
+    </header>
+    <img src="https://i.ytimg.com/vi/eAlJRpj3NA4/maxresdefault.jpg" alt="" width="100%" height=650px>
+    <hr>
+    <div>
+        <nav>
+            <a href="01_home.html"><b>Home</b></a>
+            <a href="03_airforce.html"><b>Indian Air Force</b></a>
+             <button id="mutebtn"></button>
+        </nav>
+    </div>
+    <hr>
+    <div id="intro">
+        
+        <p>
+            The Garud Commando Force is the special forces unit of the Indian Air Force. It was formed in September 2004
+            and has a current strength of over 1500 personnel. The unit derives its name from Garuda, a divine bird-like
+            creature in Indian history.
+        </p>
+        <p>
+            Garud is tasked with the protection of critical Air Force bases and installations; search and rescue during
+            peace and hostilities and disaster relief during calamities. Presently, Garuds are deployed in Congo as part
+            of the UN peace keeping operations.
+        </p>
+        <p>
+            It was formed in September , 2004 , after an attack on air bases in J&K.
+        </p>
+        <p>
+            Originally named as “Tiger Force” but later it was changed to “Garud Commando Force”
+        </p>
+        <p>
+        <h4><u> Insignia</u></h4>
+        <ul style="color: maroon;">
+            <li>Maroon Beret</li>
+            <li>Garud Commando Force Patch</li>
+            <li>Garud Logo</li>
+        </ul>
+        </p><br>
+        <h4 style="display: inline-block;"><u> Motto:-&nbsp; </u></h4>
+        <h4 style="display: inline-block; color: maroon;"><b> ॥प्रहार से सुरक्षा॥ (Defence by Offence). </b></h4><br>
+        <p>
+            • There are currently around 2000 Garuds serving in IAF . <br>
+            • They have longest special forces training in the world (around 3 years). <br>
+            • They are directly recruited, unlike other special forces where only the <br> serving personnel are allowed
+            to
+            volunteer. <br>
+            • They have also been deployed in Congo as part of UN Peace Keeping Mission.
+        </p>
+        <h4><u>Roles:-</u></h4>
+        <ul>
+            <li>Airbase Defense .</li>
+            <li>Counter Terrorists</li>
+            <li>Counter Insurgency</li>
+            <li>Hostage Rescue</li>
+            <li>Direct Action</li>
+            <li>Foreign Internal Defense.</li>
+        </ul>
+        <img src="https://scontent.fixc7-1.fna.fbcdn.net/v/t1.6435-9/78364161_2512580052308704_2119699620526292992_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=6e5ad9&_nc_ohc=GPhCxKswoYIAX8cnGvL&_nc_oc=AQmNYduPKAhhTsb6a21iYCE_LNmwSfqJGt9IfgXjMrPxzmy5R6oDvAj9yGc_ikyy8KI&_nc_ht=scontent.fixc7-1.fna&oh=9c0352bf04cac210cf5dd6536fce0b5b&oe=60CF6A7C"
+            alt="" id="img5">
+    </div>
+    <hr>
+    <div id="operations">
+        <h1 style="color: rgb(18, 8, 85);"><u>Operations</u></h1>
+        <p style="color: rgb(13, 133, 73);">
+            • They work very silently just as 9 Para and Marcos and most of it’s missions are confidential . They
+            suffered first causality in 2015 and it was that time when most of the people came to know
+            about there existence in J&K while in fact they are active in J&K from 2005.
+        </p>
+        <p>
+            <u> Some of the known operations of Garuds</u>:-
+        <ul>
+            <li>MONUC(Congo)</li>
+            <li>Security during Aero India.</li>
+            <li>2016 Pathankot Attack .</li>
+            <li>Counter-Terrorists operation in J&K.</li>
+        </ul>
+        • They operate in squads , each squad consisting 14 commandos.
+        </p>
+        <img src="https://images.outlookindia.com/public/uploads/articles/2017/10/11/garud_2_630_630.jpg" alt=""
+            id="img4">
+    </div>
+    <hr>
+    <div id="awards">
+        <h1 style="color: rgb(8, 35, 58);"><u>Gallantry Awards</u></h1>
+        <p>The Garuds have actively participated in counter-terrorist operations and have received many accolades which
+            include 1 Ashok Chakra, 4 Shaurya Chakras, and many Vayu Sena Medal .</p>
+        <p><b><u>Shaurya Chakra</u></b>– Corporal Devendra Mehta(2018) , Corporal Nilesh (2018,posthumous) , <br>
+            Sergeant Milind Kishor (2018, posthumous).</p>
+        <p><b><u>Ashok Chakra</u></b>– Corporal Jyoti Pakash Nirala (2018) – even the president cried after listening
+            <br> to
+            the bravery shown by his Garud while giving Ashok Chakra to his wife . He alone took <br> 4
+            terrorists down with his LMG firing it’s complete magazine of 100 bullets in single go and <br> injured
+            the other two before collapsing. His squad mates told that he was not stopping on <br> that day
+            even after the orders from his commanding officer . His mates told that he was a <br> Rambo that
+            day and he was not stopping firing even after he was hit multiple bullets. And <br> his finger was on
+            the trigger of the LMG even after falling.
+        </p>
+        <img src="https://pbs.twimg.com/media/DsRPBH7WsAALWqJ.jpg" alt="" id="img3">
+    </div>
+</body>
+
+</html>

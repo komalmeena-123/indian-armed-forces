@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Air Force</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: skyblue;
+        }
+
+        /* -----------------------------------header styling------------------------------------ */
+        header {
+            font-family: 'Baloo Bhai 2';
+            text-align: center;
+            font-size: 40px;
+            color: rgb(228, 215, 215);
+            margin-top: -35px;
+        }
+
+        header h1 {
+            margin-bottom: -15px;
+        }
+
+        button#mutebtn {
+            background: url(button.jpg) no-repeat;
+            width: 30px;
+            height: 30px;
+            border: 2px solid red;
+            border-radius: 30px;
+        }
+
+        #img1 {
+            position: absolute;
+            right: 214px;
+            top: 17px;
+            width: 75px;
+        }
+
+        #img2 {
+            position: absolute;
+            left: 152px;
+            top: 22px;
+            width: 120px;
+        }
+
+        #img3 {
+            width: 200px;
+        }
+
+        /* ------------------nagation styling-------------------------- */
+        nav {
+            background-color: black;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        nav li {
+            float: left;
+            list-style: none;
+            margin: 10px;
+            margin-left: -5px;
+            margin-right: 72px;
+        }
+
+        nav ul {
+            overflow: auto;
+        }
+
+        nav ul a {
+            color: #f1b760;
+            text-decoration: none;
+            padding: 10px 16px;
+        }
+
+        nav li a:hover {
+            color: rgb(226, 52, 61);
+            background-color: white;
+            font-weight: bolder;
+        }
+
+        /* -----------------------------intro styling------------------------------- */
+        #intro {
+            color: #330cdf;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        /* -----------------------------command styling------------------------------- */
+        #command {
+            color: white;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        table {
+            width: 100%;
+            background-image: url('https://wallpaperaccess.com/full/472345.jpg');
+            /* background-size: 1400px; */
+            /* background-position: top; */
+            background-size: cover;
+            border: solid 10px red;
+        }
+
+        table,
+        th,
+        td {
+            text-align: left;
+            color: #ecfc09;
+            /* background-image: url('https://wallpaperaccess.com/full/1266772.jpg'); */
+            /* border: solid 2px black; */
+            border-collapse: collapse;
+            font-size: 100%;
+            font-weight: 800;
+        }
+
+        td,
+        th {
+
+            padding: 15px;
+        }
+
+        table,
+        thead,
+        th {
+            color: rgb(8, 7, 7);
+        }
+
+        /* ---------------------------------ranks styling------------------------------- */
+        #officer1,
+        #officer2,
+        #officer3,
+        #officer4,
+        #officer5,
+        #officer6,
+        #officer7,
+        #officer8,
+        #officer9,
+        #officer10 {
+            display: inline-block;
+            margin: 2px;
+        }
+
+        #or1,
+        #o2,
+        #or3,
+        #or4,
+        #or5,
+        #or6,
+        #or7 {
+            display: inline-block;
+            margin: 2px;
+            ;
+        }
+
+        .others {
+            width: 14%;
+            float: left;
+        }
+
+        /* --------------------------------structure styling----------------------------- */
+        #structure {
+            color: #330cdf;
+            margin: 30px;
+            font-size: larger;
+        }
+
+        #structure h3 {
+            color: rgb(104, 69, 3);
+            background-image: url('');
+            display: inline-block;
+        }
+
+        /* #structure h1{
+            display: inline-block;
+        } */
+    </style>
+    <script>
+        var audio, mutebtn;
+        function initAudioPlayer() {
+            audio = new Audio();
+            audio.src = "Kandho Se Milte Hain Kandhe - Lakshya (Desh Bhakti).mp3";
+            audio.loop = true;
+            audio.play();
+
+            mutebtn = document.getElementById("mutebtn");
+
+            mutebtn.addEventListener("click", mute);
+
+            function mute() {
+                if (audio.muted) {
+                    audio.muted = false;
+                    mutebtn.style.background = "url(button.jpg) no-repeat";
+                } else {
+                    audio.muted = true;
+                    mutebtn.style.background = "url(button2.png) no-repeat";
+                }
+            }
+        }
+        window.addEventListener("load", initAudioPlayer);
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><u>Indian Air Force</u></h1>
+        <!-- <p><i>Touch the Sky with Glory</i></p> -->
+        <img src="https://indianairforce.nic.in/sites/default/files/motto_0.gif" alt="" id="img3">
+        <img src="https://indianairforce.nic.in/sites/all/themes/iaf/images/ashok-icon.png" alt="" id="img1">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Badge_of_the_Indian_Air_Force.svg/1200px-Badge_of_the_Indian_Air_Force.svg.png"
+            alt="" id="img2">
+    </header>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="01_home.html">Home</a></li>
+                <li><a href="https://indianairforce.nic.in">Official Site</a></li>
+                <li><a href="08_airforce_gallary.html">Gallery</a></li>
+                <li><a href="09_airforce_sf.html">Special Forces</a></li>
+                <li><a href="05_about.html">About Us</a></li>
+                <li> <button id="mutebtn"></button></li>
+            </ul>
+        </nav>
+    </div>
+    <hr style="color: blue;">
+    <div id="intro">
+        <p><b>The Indian Airforce(IAF) </b> is the air arm of the Indian Armed Forces. Its complement of personnel and
+            aircraft assets ranks fourth amongst the air forces of the world. Its primary mission is to secure Indian
+            airspace and to conduct aerial warfare during armed conflict. Since 1950 the IAF has been involved in four
+            wars with neighbouring Pakistan and one with the People's Republic of China. Other major operations
+            undertaken by the IAF include Operation Vijay, Operation Meghdoot, Operation Cactus and Operation Poomalai.
+            The IAF's mission expands beyond engagement with hostile forces, with the IAF participating in United
+            Nations peacekeeping missions.
+        </p>
+
+        <p>
+            The President of India holds the rank of Supreme Commander of the IAF. As of 1 July 2017, 139,576 personnel
+            are in service with the Indian Air Force. The Chief of Air Staff, an air chief marshal, is a four-star
+            officer and is responsible for the bulk of operational command of the Air Force. There is never more than
+            one serving ACM at any given time in the IAF. The rank of Marshal of the Air Force has been conferred by the
+            President of India on one occasion in history, to <b> Arjan Singh</b>. On 26 January 2002, Singh became the
+            first and so far, only five-star rank officer of the IAF.
+        </p>
+        <p>
+        <h3><u>Chief of Air Staff</u></h3>
+        Air Chief Marshal Rakesh Kumar Singh Bhadauria, PVSM, AVSM, VM, ADC
+        </p>
+        <p>
+        <h3><u>Insignia</u></h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Roundel_of_India.svg/120px-Roundel_of_India.svg.png"
+            alt="">
+        </p>
+        <p>
+        <h3><u>Flag</u></h3>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Air_Force_Ensign_of_India.svg/240px-Air_Force_Ensign_of_India.svg.png"
+            alt="">
+        </p>
+    </div>
+    <hr style="color: blue;">
+
+    <div id="command">
+        <h1 style="color: rgb(12, 13, 15);"><u>Commands</u></h1>
+        <p>The Indian Air Force is divided into five operational and two functional commands. Each Command is headed by
+            an Air Officer Commanding-in-Chief with the rank of Air Marshal. The purpose of an operational command is to
+            conduct military operations using aircraft within its area of responsibility, whereas the responsibility of
+            functional commands is to maintain combat readiness. Aside from the Training Command at Bangalore, the
+            primary flight training is done at the Air Force Academy (located in Hyderabad), followed by operational
+            training at various other schools. Advanced officer training for command positions is also conducted at the
+            Defence Services Staff College; specialised advanced flight training schools are located at Bidar, Karnataka
+            and Hakimpet, Telangana (also the location for helicopter training). Technical schools are found at a number
+            of other locations</p>
+
+        <table id="t1">
+            <caption>Commands</caption>
+            <thead style="font-size: 35px;">
+                <tr>
+                    <th><u>Insignia</u></th>
+                    <th><u>Name</u></th>
+                    <th><u>Headquarters</u></th>
+                    <th><u>Commander</u></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <tr></tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/9/94/CAC_Crest.jpg" alt="" width="60px"></td>
+                <td>Central Air Command(CAC)</td>
+                <td>Prayagraj,UP</td>
+                <td>Air Marshal Amit Tiwari, PSVM, AVSM, VM</td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/1/1b/EAC_Crest.jpg" alt="" width="60px">
+                    </td>
+                    <td>Eastern Air Command(EAC)</td>
+                    <td>Shillong,Meghalaya</td>
+                    <td>Air Marshal Amit Dev, AVSM, VM</td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/a/aa/SAC_Crest.jpg" alt="" width="60px">
+                    </td>
+                    <td>Southern Air Command(SAC)</td>
+                    <td>Thiruvananthapuram,Kerala</td>
+                    <td>Air Marshal Manavendra Singh, AVSM, VrC, VSM</td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/a/a6/SWAC_Crest.jpg" alt="" width="60px">
+                    </td>
+                    <td>South Western Air Command(SWAC)</td>
+                    <td>Gandhinagar,Gujarat</td>
+                    <td>Air Marshal Surendra Kumar Ghotia, PVSM, VSM</td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b2/WAC_Crest.jpg/150px-WAC_Crest.jpg"
+                            alt="" width="60px"></td>
+                    <td>Western Air Command</td>
+                    <td>New Delhi</td>
+                    <td>Air Marshal Vivek Ram Chaudhari, PSVM, AVSM, VM</td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/9/9c/Training_Crest.jpg" alt=""
+                            width="60px"></td>
+                    <td>Training Command</td>
+                    <td>Bangalore,Karnataka</td>
+                    <td>Air Marshal Rajiv Dayal Mathur, PVSM, AVSM, VSM</td>
+                </tr>
+                <tr>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/en/5/58/Maintenance_Crest.jpg" alt=""
+                            width="60px"></td>
+                    <td>Maintanance Command</td>
+                    <td>Nagpur,Maharastra</td>
+                    <td>Air Marshal Shashiker Choudhary, VSM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <div id="ranks">
+        <h1 style="color: black;"><u>Ranks</u></h1>
+        <h3><u>Officer Ranks</u></h3>
+        <div id="officer1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/India-AirForce-OF-10-collected.svg/150px-India-AirForce-OF-10-collected.svg.png"
+                alt="">
+            <p>Marshal of the Indian <br> Air Force</p>
+        </div>
+        <div id="officer2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/India-AirForce-OF-9-collected.svg/150px-India-AirForce-OF-9-collected.svg.png"
+                alt="">
+            <p>Air Chief <br> Marshal</p>
+        </div>
+        <div id="officer3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/India-AirForce-OF-8-collected.svg/150px-India-AirForce-OF-8-collected.svg.png"
+                alt="">
+            <p>Air Marshal</p>
+        </div>
+        <div id="officer4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/India-AirForce-OF-7-collected.svg/150px-India-AirForce-OF-7-collected.svg.png"
+                alt="">
+            <p>Air Vice <br> Marshal</p>
+        </div>
+        <div id="officer5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/India-AirForce-OF-6-collected.svg/150px-India-AirForce-OF-6-collected.svg.png"
+                alt="">
+            <p>Air <br> Commodore</p>
+        </div>
+        <div id="officer6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/British_RAF_OF-5.svg/75px-British_RAF_OF-5.svg.png"
+                alt="">
+            <p>Group <br> Captain</p>
+        </div>
+        <div id="officer7">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/British_RAF_OF-4.svg/75px-British_RAF_OF-4.svg.png"
+                alt="">
+            <p>Wing <br> Commander</p>
+        </div>
+        <div id="officer8">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/British_RAF_OF-3.svg/75px-British_RAF_OF-3.svg.png"
+                alt="">
+            <p>Squadron <br> Leader</p>
+        </div>
+        <div id="officer9">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/British_RAF_OF-2.svg/75px-British_RAF_OF-2.svg.png"
+                alt="">
+            <p>Flight <br> Lieutenant</p>
+        </div>
+        <div id="officer10">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/British_RAF_OF-1b.svg/75px-British_RAF_OF-1b.svg.png"
+                alt="">
+            <p>Flying <br> Officer</p>
+        </div>
+
+
+        <h3><u>Other Ranks</u></h3>
+        <div class="others" id="or1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/India-Air-OR-9.svg/105px-India-Air-OR-9.svg.png"
+                alt="">
+            <p>Master Warrant <br> Officer</p>
+        </div>
+        <div class="others" id="or2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/India-Air-OR-8.svg/105px-India-Air-OR-8.svg.png"
+                alt="">
+            <p>Warrant Officer</p>
+        </div>
+        <div class="others" id="or3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/India-Air-OR-7.svg/105px-India-Air-OR-7.svg.png"
+                alt="">
+            <p>Junior Warrant <br> Officer</p>
+        </div>
+        <div class="others" id="or4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/India-AirForce-OR-6.svg/105px-India-AirForce-OR-6.svg.png"
+                alt="">
+            <p>Sergeant</p>
+        </div>
+        <div class="others" id="or5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India-AirForce-OR-4.svg/105px-India-AirForce-OR-4.svg.png"
+                alt="">
+            <p>Corporal</p>
+        </div>
+        <div class="others" id="or6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/India-AirForce-OR-2.svg/105px-India-AirForce-OR-2.svg.png"
+                alt="">
+            <p>Leading Aircraftsman</p>
+        </div>
+        <div class="others" id="or7">
+            <p>Aircraftsman</p>
+            <br><br><br><br><br><br><br><br>
+
+        </div>
+    </div>
+    <hr>
+
+    <div id="structure">
+        <h1 style="color: black;"><u>Structure</u></h1>
+        <h3><u>Commands</u></h3>
+        <ul>
+            <li>5 Operational and 2 Functional commands each commanded by a Air Marshal</li>
+        </ul>
+        <h3><u>Wings</u></h3>
+        <ul>
+            <li>
+                A wing is a formation intermediate between a command and a squadron. It generally consists of two or
+                three IAF squadrons and helicopter units, along with forward base support units (FBSU). FBSUs do not
+                have or host any squadrons or helicopter units but act as transit airbases for routine operations. In
+                times of war, they can become fully fledged air bases playing host to various squadrons. In all, about
+                47 wings and 19 FBSUs make up the IAF. Wings are typically commanded by an air commodore.
+            </li>
+        </ul>
+        <h3><u>Stations</u></h3>
+        <ul>
+            <li>Within each operational command are anywhere from nine to sixteen bases or stations. Smaller than wings,
+                but similarly organised, stations are static units commanded by a group captain. A station typically has
+                one wing and one or two squadrons assigned to it.</li>
+        </ul>
+        <h3><u>Squadrons and Units</u></h3>
+        <ul>
+            <li>These are the field units and formations attached to static locations.</li>
+            <li>Carries out primary task of the IA.F</li>
+            <li>Fighter Squadron consists 18 aircafts.</li>
+            <li>Fighter Squadrons are headed by Wing Commander.</li>
+            <li>Trasport and Helicopter units are headed by Group Captain.</li>
+        </ul>
+        <h3><u>Flights</u></h3>
+        <ul>
+            <li>Flights are sub-divisions of squadrons, commanded by a squadron leader. Each flight consists of two
+                sections.</li>
+        </ul>
+        <h3><u>Section</u></h3>
+        <ul>
+            <li>The smallest unit is the section, led by a flight lieutenant. Each section consists of three aircraft.
+            </li>
+        </ul>
+    </div>
+    <hr>
+</body>
+
+</html>
